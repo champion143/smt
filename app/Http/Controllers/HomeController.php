@@ -16,8 +16,6 @@ class HomeController extends Controller
 
     public function index()
     {
-        // $categories = Category::orderBy('id','desc')->get();
-        // return view('home')->with('categories',$categories);
         $categories = Category::orderBy('id','desc')->get();
         $destinations = Destination::orderBy('id','desc')->get();
         return view('welcome')->with('categories',$categories)->with('destinations',$destinations);

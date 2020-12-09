@@ -348,6 +348,12 @@
                              <input placeholder="Confirm your password" class="form-control" type="password" name="password_confirmation" required autocomplete="new-password">
                              <i class="fa fa-eye"></i>
                          </div>
+                         <div class="form-group mb-4">
+                            <select class="form-control" name="role">
+                                <option value="user">User</option>
+                                <option value="vendor">Vendor</option>
+                            </select>
+                        </div>
                          <button class="btn btn-primary btn-block mb-4">Sign Up</button>
                      </form>
                  </div>
@@ -377,29 +383,22 @@
                       <img width="70" src="{{ url('img/smt-cr-left.svg') }}">
                   </div>
                   <div class="text-center">
-                      <img hidden="hidden" width="60" class="mb-2" src="{{ url('img/checkmark-orange.svg') }}">
-                      <h2 class="text-center font-weight-bold mb-5  position-relative">Reset Password</h2></div>
-                  <div class="">
-                      <form method="POST" action="{{ route('password.email') }}">
-
-                          @csrf
-                          <div class="form-group mb-4">
-                              <input placeholder="Enter email address" class="form-control" type="" name="email">
-                          </div>
-
-                          <button class="btn btn-primary btn-block mb-4">Reset account</button>
-
-                          <button class="btn btn-outline-dark btn-block mb-4">Back to login</button>
-
-
-                      </form>
-                      <div class="text-center" style="display: none;">
-                      <p>We’ve sent you an email at dummymail@gmail.com with instructions to reset your password. It may take a minute or two to arrive.</p>
-                          <button class="btn btn-primary my-4 px-4">Back to login</button>
-                      </div>
-                  </div>
-
-
+                        <img hidden="hidden" width="60" class="mb-2" src="{{ url('img/checkmark-orange.svg') }}">
+                        <h2 class="text-center font-weight-bold mb-5  position-relative">Reset Password</h2></div>
+                        <div class="">
+                            <form method="POST" action="{{ route('password.email') }}">
+                                @csrf
+                                <div class="form-group mb-4">
+                                    <input placeholder="Enter email address" class="form-control" type="" name="email">
+                                </div>
+                                <button class="btn btn-primary btn-block mb-4">Reset account</button>
+                                <button class="btn btn-outline-dark btn-block mb-4">Back to login</button>
+                            </form>
+                            <div class="text-center" style="display: none;">
+                            <p>We’ve sent you an email at dummymail@gmail.com with instructions to reset your password. It may take a minute or two to arrive.</p>
+                                <button class="btn btn-primary my-4 px-4">Back to login</button>
+                            </div>
+                        </div>
                   </div>
 
               </div>
