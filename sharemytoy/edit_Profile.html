@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>::Sharemytoy::</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a class="navbar-brand" href="#"><img width="113" src="img/logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+               <ul class="navbar-nav ml-auto mt-2 mt-lg-0 header-filter">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#"> Add the listing <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#"> Trips <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#"> Messages <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img width="60" src="img/user-btn.svg"> </a>
+                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Account</a>
+                        <a class="dropdown-item" href="#">Favorites</a>
+                        <a class="dropdown-item" href="#">Become a Vendor</a>
+                        <a class="dropdown-item" href="#">Experience Guide</a>
+                        <a class="dropdown-item" href="#">Currency</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">logout</a>
+                     </div>
+                  </li>
+               </ul>
+               s
+            </div>
+         </nav>
+      </header>
+      <div class="vender-profile edit_Profile">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-4">
+                  <div class="profile-view">
+                     <div class="text-center mb-5">
+                        <div class="d-inline-block position-relative">
+                           <img class="border-radius" width="177px" height="177px" src="img/default-img.png" />
+                           <!-- <span class="reward-ribbon"><img src="img/reward-ribbon.svg"></span> -->
+                           <p class="mt-1"><a href="" class="text-dark"><u> Update Photo</u> </a></p>
+                        </div>
+                     </div>
+                     <div class="">
+                        <div class="d-flex">
+                           <img src="img/Identity.svg"> 
+                           <p class="font-weight-bold mb-0 ml-2">Identity verified</p>
+                        </div>
+                        <div class="d-flex my-3 justify-content-between align-items-center">
+                           <div class="d-flex">
+                              <img src="img/star-outline.svg"> 
+                              <p class="font-weight-bold mb-0 ml-2">4 reviews</p>
+                           </div>
+                           <div class=""><a class="btn-light btn btn-sm shadow px-3 py-1 border-radius"> <img src="img/star.svg"> 4.8 </a></div>
+                        </div>
+                     </div>
+                     <div class="mt-4">
+                        <h6 class="mb-3">VERIFIED INFO</h6>
+                        <div class="d-flex justify-content-between">
+                           <p class="mb-0 font-weight-bold">Approved to drive</p>
+                           <a class="text-primary"> <u> Verify ID </u> </a>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                           <p class="mb-0 font-weight-bold">Email address</p>
+                           <span><img src="img/checkmark.svg"></span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3 ">
+                           <p class="mb-0 font-weight-bold">Phone number</p>
+                           <span><img src="img/checkmark.svg"></span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                           <p class="mb-0 font-weight-bold">Facebook</p>
+                           <span><img src="img/checkmark.svg"></span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                           <p class="mb-0 font-weight-bold">Twitter</p>
+                           <a class="text-primary"> <u> Connect account </u> </a>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                           <p class="mb-0 font-weight-bold">Instagram</p>
+                           <a class="text-primary"> <u> Connect account </u> </a>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                           <p class="mb-0 font-weight-bold">Phone number</p>
+                           <a class="text-primary"> <u> Connect account </u> </a>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                           <p class="mb-0 font-weight-bold">RSS Feed</p>
+                           <a class="text-primary"> <u> Connect account </u> </a>
+                        </div>
+                     </div>
+                     <!-- <div class="mt-4">
+                        <h6 class="mb-3">HOST STATS</h6>
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 font-weight-bold">Response rate</p> 
+                            <span class="font-weight-bold">100%</span>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <p class="mb-0 font-weight-bold">Response time</p> 
+                            <span class="font-weight-bold">2 Min</span>
+                        </div>
+                        </div> --> 
+                  </div>
+               </div>
+               <div class="col-sm-7 ml-auto">
+                  <div class="d-flex justify-content-between">
+                     <div class="">
+                        <h4 class="h2 font-weight mb-0">Hi, I’m Jack Aranda</h4>
+                        <p class="small text-muted">26 trips • Joined Sep 2016</p>
+                     </div>
+                  </div>
+                  <div class="mb-3">
+                     <h6 class="mb-2">About</h6>
+                     <textarea class="form-control" rows="6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of</textarea>
+                  </div>
+                  <div class="mb-3">
+                     <h6 class="mb-2">Location</h6>
+                     <textarea class="form-control" rows="2">Indore india</textarea>
+                  </div>
+                  <div class="mb-3">
+                     <h6 class="mb-2">Languages I Speak</h6>
+                     <div data-tags-input-name="taggone" id="tag">English, Hindi, Urdu </div>
+                  </div>
+                  <div class="mb-3">
+                     <button class="btn-outline-primary btn px-4">Add more</button>
+                  </div>
+                  <div class="mb-3">
+                     <h6 class="mb-2">Work</h6>
+                     <textarea class="form-control" rows="1">Hotel Manager</textarea>
+                     <div class="mt-4 d-flex flex-row-reverse">
+                        <button class="btn-outline-primary btn px-4 ml-2 border-radius">Cancel</button>
+                        <button class="btn-primary btn px-4 border-radius">Save</button>
+                     </div>
+                  </div>
+                  <div class="profile-revews mt-5">
+                     <h6 class="text-uppercase d-flex align-items-center border-top pt-5">
+                        <img class="mr-2" src="img/star-gr.svg"> Reviews (0) 
+                     </h6>
+                     <p class="small">There are no Reviews yet</p>
+                     <div>
+                        <p class="d-flex align-items-center border-top py-5 mt-5 border-bottom"><a href="" class="text-dark"> <u>Reviews by you </u> </a> </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="subscribe">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-5">
+                  <h4>Save Time, Save Money!</h4>
+                  <p>Sign up and we'll send the best deals to you</p>
+               </div>
+               <div class="col-sm-7 align-items-center justify-content-center d-flex">
+                  <div class="row w-100">
+                     <div class="col-sm-9">
+                        <input class="form-control" placeholder="Enter your email address" type="" name="">
+                     </div>
+                     <div class="col-sm-3">
+                        <button class="btn btn-primary btn-block">Subscribe</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-2">
+                  <h5>About</h5>
+                  <p>About get SMT</p>
+                  <p>Press</p>
+                  <p>Term of use</p>
+                  <p>Cookies policy</p>
+                  <p>Member interface</p>
+                  <p>Agreement</p>
+                  <p>Contact us</p>
+               </div>
+               <div class="col-sm-2">
+                  <h5>Learn More</h5>
+                  <p>How it works</p>
+                  <p>For owners</p>
+                  <p>Mobile apps</p>
+               </div>
+               <div class="col-sm-3">
+                  <h5>Journal</h5>
+                  <p>Company news</p>
+                  <p>Lifestyle</p>
+                  <p>Experience Guide</p>
+                  <p>Destinations</p>
+                  <p>Tips of Rental and owners></p>
+                  <p>FAQ</p>
+               </div>
+               <div class="col-sm-2">
+                  <h5>Social Media</h5>
+                  <p>Facebook</p>
+                  <p>Twitter</p>
+                  <p>Instagram</p>
+                  <p>RSS</p>
+               </div>
+               <div class="col-sm-2">
+                  <h5>Download The App</h5>
+                  <a href="" class="d-block mb-3 mt-4 pt-1"> <img width="140" src="img/iphone-btn.png"> </a>
+                  <a href="" class="d-block mb-3"> <img width="140" src="img/googleplay-btn.png"> </a>
+               </div>
+            </div>
+         </div>
+         <div class="copy-right">
+            <p>Copyright © 1996–2020 Sharemytoy. All rights reserved.</p>
+         </div>
+      </footer>
+      <!------------->
+      <!--   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <script type="text/javascript" src="js/my-script.js"></script>
+      <script type="text/javascript">
+         $(".center").slick({
+             dots: true,
+             infinite: true,
+             centerMode: true,
+             slidesToShow: 6,
+             slidesToScroll: 3
+           });
+         $(".regular").slick({
+             dots: true,
+             infinite: true,
+             slidesToShow: 6,
+             slidesToScroll: 1
+           });
+         $(".destinations").slick({
+             dots: true,
+             infinite: true,
+             slidesToShow: 6,
+             slidesToScroll: 1
+           });
+         
+         $(".ratings-section").slick({
+             dots: true,
+             infinite: true,
+             slidesToShow: 3,
+             slidesToScroll: 1
+           });
+         
+         
+          $(".lazy").slick({
+             lazyLoad: 'ondemand', // ondemand progressive anticipated
+             infinite: true
+           });
+         
+      </script>
+      <script type="text/javascript">
+         var s = document.createElement('style'), 
+            r = document.querySelectorAll('input[type=range]'), 
+            prefs = ['webkit-slider-runnable', 'moz-range'], 
+            styles = [], 
+            l = prefs.length
+            n = r.length;
+         
+         document.body.appendChild(s);
+         
+         var getTrackStyleStr = function(el) {
+          var str = '', 
+              j = el.dataset.idx, 
+              min = el.min || 0, 
+              perc = (el.max) ? ~~(100*(el.value - min)/(el.max - min)) : el.value, 
+              val = perc + '% 100%';
+              
+          for(var i = 0; i < l; i++) {
+            str += '.js input[type=range]:nth-of-type(' + j + ')::-' + prefs[i] + '-track{background-size:' + val + '}';
+          }
+            
+          return str;
+         };
+         
+         var getTipStyleStr = function(el) {
+          var str = '.js input[type=range]:nth-of-type(' + el.dataset.idx + ') /deep/ #thumb:after{content:"' + el.value + '%"}';
+          
+          return str;
+         };
+         
+         for(var i = 0; i < n; i++) {
+          styles.push('');
+          
+          r[i].addEventListener('input', function() {    
+            styles[this.dataset.idx] = getTrackStyleStr(this);
+            if(this.classList.contains('tip')) {
+              styles[this.dataset.idx] += getTipStyleStr(this);
+            }
+            
+            s.textContent = styles.join('');
+          }, false);
+         }
+      </script>
+   </body>
+</html>

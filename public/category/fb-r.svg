@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="fb-r" transform="translate(-363 -942)">
+    <g id="social_media" data-name="social media" transform="translate(363 942)">
+      <g id="Group_959" data-name="Group 959">
+        <g id="Ellipse_198" data-name="Ellipse 198" fill="none" stroke="#0078ff" stroke-width="1.5">
+          <circle cx="25" cy="25" r="25" stroke="none"/>
+          <circle cx="25" cy="25" r="24.25" fill="none"/>
+        </g>
+        <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M10.574,10.075l.5-3.242H7.961V4.73A1.621,1.621,0,0,1,9.789,2.979H11.2V.219A17.244,17.244,0,0,0,8.693,0C6.131,0,4.457,1.553,4.457,4.363V6.834H1.609v3.242H4.457v7.836h3.5V10.075Z" transform="translate(18.391 17.625)" fill="#0078ff"/>
+      </g>
+    </g>
+  </g>
+</svg>

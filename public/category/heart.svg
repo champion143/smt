@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.052" height="26.467" viewBox="0 0 30.052 26.467">
+  <g id="heart" transform="translate(0.553 0.553)">
+    <path id="Icon_awesome-heart" data-name="Icon awesome-heart" d="M25.842,3.96a7.644,7.644,0,0,0-10.431.76l-1.1,1.135-1.1-1.135A7.644,7.644,0,0,0,2.778,3.96a8.026,8.026,0,0,0-.553,11.621L13.041,26.75a1.752,1.752,0,0,0,2.532,0L26.389,15.581A8.021,8.021,0,0,0,25.842,3.96Z" transform="translate(0.001 -2.248)" fill="#fe3636" opacity="0"/>
+    <path id="Icon_feather-heart" data-name="Icon feather-heart" d="M28.212,6.66a7.381,7.381,0,0,0-10.441,0L16.348,8.083,14.926,6.66A7.383,7.383,0,1,0,4.485,17.1l1.422,1.422L16.348,28.964,26.789,18.523,28.212,17.1a7.381,7.381,0,0,0,0-10.441Z" transform="translate(-1.876 -4.05)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

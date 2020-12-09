@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96.591" height="50" viewBox="0 0 96.591 50">
+  <g id="user-btn" transform="translate(-1641 145)">
+    <rect id="Rectangle_135" data-name="Rectangle 135" width="96.591" height="50" rx="25" transform="translate(1641 -145)" fill="#0078ff"/>
+    <g id="Group_202" data-name="Group 202">
+      <path id="Icon_awesome-user-circle" data-name="Icon awesome-user-circle" d="M18.873.563A18.873,18.873,0,1,0,37.746,19.435,18.87,18.87,0,0,0,18.873.563Zm0,7.306a6.7,6.7,0,1,1-6.7,6.7A6.7,6.7,0,0,1,18.873,7.868Zm0,26.179a14.583,14.583,0,0,1-11.149-5.19,8.485,8.485,0,0,1,7.5-4.551,1.862,1.862,0,0,1,.54.084,10.076,10.076,0,0,0,3.113.525,10.038,10.038,0,0,0,3.113-.525,1.862,1.862,0,0,1,.54-.084,8.485,8.485,0,0,1,7.5,4.551A14.583,14.583,0,0,1,18.873,34.047Z" transform="translate(1692.565 -139.563)" fill="#fff"/>
+      <path id="Icon_material-menu" data-name="Icon material-menu" d="M4.5,24.714H23.784V22.095H4.5Zm0-6.547H23.784V15.547H4.5ZM4.5,9v2.619H23.784V9Z" transform="translate(1657.208 -137)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

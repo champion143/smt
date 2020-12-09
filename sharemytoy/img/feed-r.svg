@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="feed-r" transform="translate(-73 -53)">
+    <g id="Icon_material-rss-feed" data-name="Icon material-rss-feed" transform="translate(91.698 70.699)">
+      <path id="Path_135" data-name="Path 135" d="M10.165,25.542A2.082,2.082,0,1,1,8.082,23.46a2.082,2.082,0,0,1,2.082,2.082Z" transform="translate(-6 -12.761)" fill="#0078ff"/>
+      <path id="Path_136" data-name="Path 136" d="M6,6.66v2.7a12.161,12.161,0,0,1,12.16,12.16h2.7A14.868,14.868,0,0,0,6,6.66Zm0,5.407v2.7a6.759,6.759,0,0,1,6.753,6.753h2.7A9.454,9.454,0,0,0,6,12.067Z" transform="translate(-6 -6.66)" fill="#0078ff"/>
+    </g>
+    <g id="Ellipse_198" data-name="Ellipse 198" transform="translate(73 53)" fill="none" stroke="#0078ff" stroke-width="1.5">
+      <circle cx="25" cy="25" r="25" stroke="none"/>
+      <circle cx="25" cy="25" r="24.25" fill="none"/>
+    </g>
+  </g>
+</svg>
