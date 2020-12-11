@@ -269,10 +269,10 @@
                   </div>
                   <div class=""><h2 class="text-center font-weight-bold mb-5  position-relative">Sign in</h2></div>
                   <div class="">
-                      <form method="POST" action="{{ route('login') }}">
+                      <form id="login-form" method="POST" action="{{ route('login') }}">
                           @csrf
                           <div class="form-group mb-4">
-                              <input placeholder="Enter your email address" class="form-control" type="" name="email" required autocomplete="email" autofocus>
+                              <input placeholder="Enter your email address" class="form-control" type="email" name="email" required autocomplete="email" autofocus>
                           </div>
                           <div class="form-group mb-4">
                               <input placeholder="Enter your Password" class="form-control" type="password" name="password" required autocomplete="current-password">
@@ -331,14 +331,14 @@
                  </div>
                  <div class=""><h2 class="text-center font-weight-bold mb-5  position-relative">Sign Up</h2></div>
                  <div class="">
-                     <form method="POST" action="{{ route('register') }}">
-                          @csrf
+                     <form method="POST" id="registration-form" action="{{ route('register') }}">
+                         @csrf
                          <div class="form-group mb-4 row">
                              <div class="col-sm-6">  <input placeholder="Enter first name" class="form-control" type="" name="name" required autocomplete="name" autofocus></div>
-                             <div class="col-sm-6">  <input placeholder="Enter last name" class="form-control" type="" name="last_name"></div>
+                             <div class="col-sm-6">  <input placeholder="Enter last name" class="form-control" type="" name="last_name" required></div>
                          </div>
                          <div class="form-group mb-4">
-                             <input placeholder="Enter email address" class="form-control" type="" name="email" autocomplete="email">
+                             <input placeholder="Enter email address" class="form-control" type="email" name="email" autocomplete="email" required>
                          </div>
                          <div class="form-group mb-4 position-relative">
                              <input placeholder="Enter password" class="form-control" type="password" name="password" required autocomplete="new-password">
@@ -354,6 +354,7 @@
                                 <option value="vendor">Vendor</option>
                             </select>
                         </div>
+                        <div class="text-danger" id="errors"></div>
                          <button class="btn btn-primary btn-block mb-4">Sign Up</button>
                      </form>
                  </div>
@@ -463,6 +464,10 @@
 <!--   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+
 <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="{{ url('slick/slick.js') }}" type="text/javascript" charset="utf-8"></script>
@@ -540,6 +545,61 @@
        s.textContent = styles.join('');
      }, false);
     }
+
+
+    $('#login-form').on('submit', function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "{{ route('login') }}",
+            data: $(this).serialize(),
+            success: function(msg) {
+                swal({
+                    title: "Success!",
+                    text: "Login Successfully..",
+                    type: "success",
+                    timer: 2000,
+                    showConfirmButton: false
+                    }, function(){
+                        window.location.href = "{{ route('user.profile') }}";
+                    }
+                );
+            },
+            error: function(error) {
+                swal("These credentials do not match our records.", "", "error");
+            }
+        });
+    });
+
+    $('#registration-form').on('submit', function(e) {
+        $('#errors').html("");
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "{{ route('register') }}",
+            data: $(this).serialize(),
+            success: function(msg) {
+                swal({
+                    title: "Success!",
+                    text: "User Registration Done Successfully..",
+                    type: "success",
+                    timer: 2000,
+                    showConfirmButton: false
+                    }, function(){
+                        window.location.href = "{{ route('user.profile') }}";
+                    }
+                );
+            },
+            error: function(xhr, status, error)
+            {
+                $.each(xhr.responseJSON.errors, function (key, item)
+                {
+                    $("#errors").append("<li class='alert alert-danger'>"+item+"</li>")
+                });
+            }
+        });
+    });
+
  </script>
 </body>
 
